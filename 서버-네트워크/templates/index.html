@@ -1,0 +1,17 @@
+<!-- 태그는 시작태그와 종료 태그로 이루어져 있습니다. -->
+<!DOCTYPE html>
+<html lang="ko">
+<!-- 문서의 메타데이터를 포함하는 영역입니다.(탭 제목) -->
+<head>
+    <title>웹 페이지</title>
+</head> 
+<!-- 문서의 본문을 포함하는 영역입니다. -->
+<body>
+    <h1>안녕하세요!</h1>
+    <h3>겨울 풍경</h3>
+    {# 출력- {{ }}, 제어- {% %} #}
+    <img src="{{ url_for('static', filename='main-pic.jpg') }}" 
+            alt="겨울 풍경 사진" width="500">
+    <h4><a href="{{ url_for('gallery') }}">갤러리로 가기</a></h4>
+</body>
+</html>

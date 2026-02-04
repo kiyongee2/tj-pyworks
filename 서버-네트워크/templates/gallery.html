@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>갤러리 페이지</title>
+    <style>
+        img{
+            width: 300px; /* 사진 크기 조절 */
+            margin: 10px; /* 바깥 여백(10px 10px 10px 10px) */
+        }
+    </style>
+</head>
+<body>  
+    <h1>사진 갤러리</h1>
+    {% for photo in photos %}
+        <img src="{{ url_for('static', filename='photos/' + photo) }}">
+    {% endfor %}
+
+
+</body>
+</html>
